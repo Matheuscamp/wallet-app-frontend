@@ -61,6 +61,7 @@ button {
   border-color: #5936cd;
   border-width: 2px;
   border-style: solid;
+  cursor: pointer;
 }
 button.small {
   background-color: #f4f4f9;
@@ -69,6 +70,7 @@ button.small {
   border-radius: 8px;
   width: 90px;
   height: 36px;
+  cursor: pointer;
 }
 input {
   background-color: #f4f4f9;
