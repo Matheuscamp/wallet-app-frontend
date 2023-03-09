@@ -85,6 +85,9 @@ input {
   padding: 6px;
   box-sizing: border-box;
 }
+h2.azul {
+  color: #06bee1;
+}
 .full-width {
   width: 100%;
 }
@@ -110,7 +113,7 @@ input {
   margin-top: 6px;
 }
 .logo {
-  width: 88px;
+  width: 124px;
   height: auto;
 }
 .auth-container {
