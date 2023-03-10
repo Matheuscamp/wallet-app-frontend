@@ -8,6 +8,9 @@ const onDeleteItem = async (id) => {
     const email = localStorage.getItem("@WalletApp:userEmail");
     await fetch(`https://mp-wallet-app-api.herokuapp.com/finances/${id}`, {
       method: "DELETE",
+      mode: "cors",
+      cache: "no-cache",
+      credentials: "same-origin",
       headers: {
         email: email,
       },
@@ -20,7 +23,6 @@ const onDeleteItem = async (id) => {
 
 const renderFinancesList = (data) => {
   const table = document.getElementById("finances-table");
-  table.removeChild();
   table.innerHTML = "";
 
   const tableHeader = document.createElement("tr");
@@ -112,7 +114,7 @@ const renderFinanceElements = (data) => {
   const expenses = data
     .filter((item) => Number(item.value) < 0)
     .reduce((acc, item) => acc + Number(item.value), 0);
-  const balance = revenues + expenses;
+  const totalValue = revenues + expenses;
 
   // render total items
   const financeCard1 = document.getElementById("finance-card-1");
