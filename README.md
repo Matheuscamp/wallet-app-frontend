@@ -1,6 +1,6 @@
 # Wallet App
 
-<img src="https://github.com/Matheuscamp/wallet-app-frontend/blob/main/icons/dashboard%20wallet-app.png" alt="wallet-app-preview" height="228" width="678">
+<img src="https://github.com/Matheuscamp/wallet-app-frontend/blob/main/icons/dashboard%20wallet-app.png" alt="wallet-app-preview" height="500" >
 
 ## Introduction
 
